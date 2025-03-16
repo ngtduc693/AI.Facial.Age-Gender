@@ -5,6 +5,8 @@ AI models. Ideal for chatbots, customer insights, security, and healthcare appli
 
 ![Illustration](https://raw.githubusercontent.com/ngtduc693/AI.Facial.Age-Gender/refs/heads/main/imgs/ageandgender.png)
 
+## 🚀 Demo: [My demo website is hosted on Azure (FREE SKU) here](https://ai-facial.azurewebsites.net/AgeAndGender)
+
 ## 🚀 Features
 
 - Age and Gender Detection.

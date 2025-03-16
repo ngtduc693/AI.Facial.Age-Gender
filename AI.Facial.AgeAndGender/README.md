@@ -1,4 +1,4 @@
-# AI.Facial.AgeAndGender
+﻿# AI.Facial.AgeAndGender
 
 **AI.Facial.AgeAndGender** is a .NET library for analyzing facial attributes, including age and gender. It seamlessly integrates with C#.NET, providing efficient and secure facial analysis with embedded
 AI models. Ideal for chatbots, customer insights, security, and healthcare applications.

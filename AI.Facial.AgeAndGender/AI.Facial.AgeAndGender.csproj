@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0;net8.0;net9.0</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <PackageId>AI.Facial.AgeAndGender</PackageId>
+        <Version>25.3.16</Version>
+        <Authors>ngtduc693</Authors>
+        <Description>AI.Facial.AgeAndGender is a .NET library for analyzing facial attributes, including Age and Gender. It seamlessly integrates with C#.NET, providing efficient and secure facial analysis with embedded AI models. Ideal for chatbots, customer insights, security, and healthcare applications.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>AI Facial Age and Gender</Title>
+        <PackageTags>AI,Age,Gender,.NET,Face</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <RepositoryUrl>https://github.com/ngtduc693/AI.Facial.Age-Gender</RepositoryUrl>
+        <RepositoryType>Public</RepositoryType>
+        <PackageReleaseNotes></PackageReleaseNotes>
+        <UserSecretsId>f3441286-a018-4373-a686-c21fdc43cac8</UserSecretsId>
+        <PackageIcon>icons.jpg</PackageIcon>
+        <PackageProjectUrl>https://github.com/ngtduc693/AI.Facial.Age-Gender</PackageProjectUrl>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Exceptions\**" />
+      <Compile Remove="Extensions\**" />
+      <EmbeddedResource Remove="Exceptions\**" />
+      <EmbeddedResource Remove="Extensions\**" />
+      <None Remove="Exceptions\**" />
+      <None Remove="Extensions\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\imgs\icons.jpg">
+          <Pack>True</Pack>
+          <PackagePath>\</PackagePath>
+        </None>
+        <None Include="README.md" Pack="true" PackagePath="\" />
+        <None Include="LICENSE.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Emgu.CV" Version="4.10.0.5680" />
+        <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+        <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.21.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\age.onnx" />
+      <None Remove="Resources\detectionv2.onnx" />
+      <None Remove="Resources\gender.onnx" />
+      <None Remove="Resources\model_quantized.onnx" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\age.onnx" />
+      <EmbeddedResource Include="Resources\detectionv2.onnx" />
+      <EmbeddedResource Include="Resources\gender.onnx" />
+    </ItemGroup>
+
+</Project>
